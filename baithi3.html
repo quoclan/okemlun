@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+
+            constructor(name, email) {
+                this.name = name;
+                this.email = email;
+            }
+
+            getName() {
+                return this.name;
+            }
+
+            setName(name) {
+                this.name = name;
+            }
+
+            getEmail() {
+                return this.email;
+            }
+
+            setEmail(email) {
+                this.email = email;
+            }
+        }
+        var arrStudent = [];
+        var maxStudent = 5;
+        for (var i = 0; i < maxStudent; i++) {
+            var nhapten = prompt("nhâp tên hs  " + (i + 1));
+            var nhapemail = prompt("nhập email " + (i + 1));
+            arrStudent[i] = new Student(nhapten, nhapemail);
+        }
+        function findStudent_Name(arrStudent) {
+            var nameFind = "Hoàng";
+            var check = false;
+            for (var i = 0; i < arrStudent.length; i++) {
+                if (arrStudent[i].name === nameFind) {
+                    check = true;
+                    arrStudent[i].setEmail("hoang@codegym.vn")
+                };
+            }
+            if (!check) {
+                alert("k có hv");
+            }
+        }
+        findStudent_Name(arrStudent);
+    </script>
+</body>
+
+</html>

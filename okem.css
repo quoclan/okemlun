@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: Tahoma;
+    font-size: 16px;
+    width: 1000px;
+    margin: 0px auto;
+}
+#menu_top {
+    background:#141414;
+    height: 40px;
+}
+#banner{
+    background-color: plum;
+    clear: both;
+    height: auto;
+    width: 100%;
+}
+#main #left {
+    width: 80%;
+    min-height: 400px;
+}
+#main #right{  
+    width: 20%;
+    min-height: 400px;
+    padding-left: 10px;
+    
+}
+#footer {
+    background: #000;
+    height: 60px;
+    width: 1000px;
+    text-align: center;
+    color:#FFF;
+    clear: left;
+    line-height: 60px;
+}
+#menu_top ul {
+    padding: 0px;
+    margin: 0px;
+}
+#menu_top ul li {
+    list-style: none;
+    float: left;
+}
+#menu_top ul li a {
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    padding: 0px 10px 0px 20px;
+    border: 1px solid #ccc ;
+}
+#home{
+    background: #1949b2;
+} 
+#banner img {
+    width: 1000px;
+}
+#main #left ul  {
+    width: 800px;
+    margin: 0px;
+    padding: 0px;
+}
+#main #left ul li {
+    list-style: none;
+}
+#main #left ul li img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+}
+.pt1 {
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 10px 6px -6px #777;
+}
+#main {
+    display: flex;
+    
+}
+#main #right .menu_right ul {
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #ccc;
+}
+#main #right .menu_right ul li {
+    list-style: none;
+}
+#main #right .menu_right ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 32px;
+    border-bottom: 1px solid #CCC;
+}
+.menu_right{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 10px 6px -6px #777;
+    margin-top: 50px;
+}
+#main #right .menu_right h3 {
+    background:rgb(2, 56, 2) url(../okemlun/icon.png) no-repeat;
+    background-size: 17%;
+    height : 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    color:#FFF;
+    padding-top: -10px;
+
+}
+.menu_right ul {
+    text-align: center;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            getName() {
+                return this.name;
+            }
+            setName(name) {
+                this.name = name;
+            }
+            getAge() {
+                return this.age;
+            }
+            setAge(age) {
+                if (age < 0) {
+                    alert('k tính đc');
+                    return;
+                }
+                this.age = age;
+            }
+        }
+        var animal1 = new Animal('CodeJs', 1);
+        document.write('Name : ' + animal1.name + '</br>');
+        document.write('Age : ' + animal1.age);
+        var age = parseInt(prompt('nhập tuổi'));
+        animal1.setAge(age);
+        document.write('<br>' + 'Name : ' + animal1.name + '</br>');
+        document.write('Age : ' + animal1.age);
+    </script>
+</body>
+
+</html>
